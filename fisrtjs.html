@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>JS</title>
+<!--<script src = "new.js" type="text/javascript"></script>--> 
+    </head>
+    <body>
+        <h1>Sting length is</h1>
+        <p id="result"></p>
+        <p id="pos"></p>
+        <p id="pos1"></p>
+        <script>
+
+            var para = document.getElementById("result");
+            var paraPos = document.getElementById("pos");
+            var paraPos1 = document.getElementById("pos1");
+            var age = 20;
+            var stringValue = "Hey! I am using Javascript. It is very easy for this java      ";
+            var stringLength = stringValue.length;
+            var position = stringValue.indexOf("Java");
+            var substring = stringValue.slice(8,22);
+            //var newString = stringValue.replace(/Java/i, "HTML");
+
+            var newString = stringValue.toUpperCase();
+            paraPos.innerHTML = position;
+            para.innerHTML = stringLength; 
+            paraPos1.innerHTML = newString;
+            
+
+            console.log("The string length is "+stringLength);
+
+                if (age>20){
+                    console.log("You are eligible to vote")
+                    }
+                else{
+                    console.log("Not eligible")
+                    }
+        </script>
+    </body>
+</html>
